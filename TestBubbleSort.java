@@ -11,7 +11,25 @@ public class TestBubbleSort{
 		System.out.print("How many numbers do you want to enter ?");
 		int number = input.nextInt();
 		
-		//let the number equal the length of the bubble array
+		//let the number to be the length of the bubble array
 		int[] bubble = new int[number];
-
+		
+		//let the user enter the numbers
+		System.out.println("Please enter the numbers you want.");
+		//input the numbers in array
+		for(int i = 0; i < bubble.length; i++){
+			bubble[i] = input.nextInt();
+		}
+		
+		//print the numbers which the user input
+		System.out.println("The numbers you enter is");
+		for(int i = 0; i < bubble.length; i++){
+			System.out.print(bubble[i] + " ");
+		}
+		
+		System.out.println("");
+		
+		//create a variable bubbleSort to call BubbleSort class
+		BubbleSort bubbleSort = new BubbleSort(number, bubble);
+	}
 }
