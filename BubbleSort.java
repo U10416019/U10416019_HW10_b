@@ -27,5 +27,12 @@ public class BubbleSort{
 			}
 		}
 	}
-
+	
+	//create a mutator method to print the result of the numbers
+	public void setPrintBubble(){
+		System.out.println("The numbers which are through bubble sort is");
+		for(int i = 0; i < bubble.length; i++){
+			System.out.print(bubble[i] + " ");
+		}
+	}
 }
